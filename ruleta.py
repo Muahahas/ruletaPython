@@ -8,6 +8,7 @@ def main ():
 	# sorteig es el numero que surt a la ruleta
 	# nguanyades es el contador de les partides que em guanyat
 	# nperdudes es el contador de les partides que em perdut
+	gettext.install(domain='ruleta',localedir='./locales')
 	capital=1000
 	aposta=0
 	numero=0
