@@ -1,4 +1,5 @@
 import random as rand
+import gettext
 
 def main ():
 	#capital es la cuantitat de diners de la que disposem
@@ -15,18 +16,18 @@ def main ():
 	nperdudes=0
 	print "Benvingut a la ruleta de la sort."
 	print "Tens un capital de " + `capital` +"e, quan vols apostar?"
-	aposta =  input()
+	aposta =int(raw_input())
 	while (aposta!=0 and capital!=0):
 		#Entrara en aquest bucle mentres s'aposti mes de 0 i es tingui capital.	
 		if (aposta<=capital and aposta>0):
 			#Si l'aposta es correcta, es a dir, menor o igual que el capital i positiva ens demanara el numero al que volem apostar.			
 			print "Introdueix el numero al qual vols apostar:"
-			numero = input()
+			numero = int(raw_input())
 			while ((numero<=0) or (numero>=37)):
 				#Si apostem a un numero erroni que no esta entre 1 i 36 ambdos inclosos ens dira que es erroni i que n'introduim un altre.
 				print "No has introduit un numero valid torna-ho a intentar!"
 				print "Introdueix el numero al qual vols apostar: "
-				numero = input()
+				numero =int(raw_input())
 			#Quan el numero sigui correcte sortira del bucle, fara el sorteig i ens dira si em guanyat o perdut.
 			sorteig = rand.randint(0,37)
 			print "Has apostat al numero "+`numero`+" i ha sortit el numero " + `sorteig`
@@ -42,11 +43,11 @@ def main ():
 			if (capital!=0):
 				#Ens donara l'opcio continuar jugant si el capital no es 0, perque en cas d'arruinar-nos no ens ho demani.
 				print "Tens un capital "+`capital`+"e, quan vols apostar?"
-				aposta = input()
+				aposta = int(raw_input())
 		else:
 			#Si la cantitat apostada era negativa o superior al capital ens dira que ho tornem a provar.
 			print "No has introduit una quantitat valida torna-ho a intentar!"
-			aposta = input()
+			aposta = int(raw_input())
 		
 	if (capital==0):
 	#Si t'has arruinat et dona un misatge
