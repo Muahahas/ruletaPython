@@ -1,5 +1,8 @@
 import random as rand
 import gettext
+import os
+import sys
+import locale
 
 def main ():
 	#capital es la cuantitat de diners de la que disposem
@@ -8,7 +11,12 @@ def main ():
 	# sorteig es el numero que surt a la ruleta
 	# nguanyades es el contador de les partides que em guanyat
 	# nperdudes es el contador de les partides que em perdut
+
+ 
+
 	gettext.install(domain='ruleta',localedir='./locales')
+	
+	_ = gettext.gettext
 	capital=1000
 	aposta=0
 	numero=0
@@ -16,7 +24,7 @@ def main ():
 	nguanyades=0
 	nperdudes=0
 	print _("Benvingut a la ruleta de la sort.")
-	print (_("Tens un capital de " + `capital` +_("e, quan vols apostar?"))
+	print (_("Tens un capital de ") + `capital` +_("e, quan vols apostar?"))
 	aposta = int(raw_input())
 	while (aposta!=0 and capital!=0):
 		#Entrara en aquest bucle mentres s'aposti mes de 0 i es tingui capital.	
@@ -38,7 +46,7 @@ def main ():
 				capital=capital+aposta
 				nguanyades+=1
 			else:
-				print (_("Has perdut ")+`aposta`+_("e.")
+				print (_("Has perdut ")+`aposta`+_("e."))
 				capital=capital-aposta
 				nperdudes+=1
 			if (capital!=0):
