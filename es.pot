@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-29 03:36+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ruleta.py:18
+msgid "Benvingut a la ruleta de la sort."
+msgstr "Benvingut a la ruleta de la sort"
+
+#: ruleta.py:19 ruleta.py:46
+msgid "e, quan vols apostar?"
+msgstr "e, quan vols apostar?"
+
+#: ruleta.py:19 ruleta.py:30
+msgid "Tens un capital de "
+msgstr "Tens un capital de "
+
+#: ruleta.py:25
+msgid "Introdueix el numero al qual vols apostar:"
+msgstr "Introdueix el numero al qual vols apostar:"
+
+#: ruleta.py:29
+msgid "No has introduit un numero valid torna-ho a intentar!"
+msgstr "No has introduit un numero valid torna-ho a intentar!"
+
+#: ruleta.py:34
+msgid "Has apostat al numero "
+msgstr "Has apostat al numero "
+
+#: ruleta.py:34
+msgid " i ha sortit el numero "
+msgstr " i ha sortit el numero "
+
+#: ruleta.py:37 ruleta.py:60
+msgid "Has guanyat "
+msgstr "Has guanyat "
+
+#: ruleta.py:37 ruleta.py:41
+msgid "e."
+msgstr "e."
+
+#: ruleta.py:41
+msgid "Has perdut "
+msgstr "Has perdut "
+
+#: ruleta.py:46
+msgid "Tens un capital "
+msgstr "Tens un capital "
+
+#: ruleta.py:50
+msgid "No has introduit una quantitat valida torna-ho a intentar!"
+msgstr "No has introduit una quantitat valida torna-ho a intentar!"
+
+#: ruleta.py:55
+msgid "Mala sort! Ho has perdut tot!"
+msgstr "Mala sort! Ho has perdut tot!"
+
+#: ruleta.py:58
+msgid "El teu capital final es: "
+msgstr "El teu capital final es: "

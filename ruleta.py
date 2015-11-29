@@ -27,7 +27,7 @@ def main ():
 			while ((numero<=0) or (numero>=37)):
 				#Si apostem a un numero erroni que no esta entre 1 i 36 ambdos inclosos ens dira que es erroni i que n'introduim un altre.
 				print _("No has introduit un numero valid torna-ho a intentar!")
-				print _("Introdueix el numero al qual vols apostar: ")
+				print _("Introdueix el numero al qual vols apostar:")
 				numero =int(raw_input())
 			#Quan el numero sigui correcte sortira del bucle, fara el sorteig i ens dira si em guanyat o perdut.
 			sorteig = rand.randint(0,37)
@@ -43,7 +43,7 @@ def main ():
 				nperdudes+=1
 			if (capital!=0):
 				#Ens donara l'opcio continuar jugant si el capital no es 0, perque en cas d'arruinar-nos no ens ho demani.
-				print (_("Tens un capital ")+`capital`+_("e, quan vols apostar?"))
+				print (_("Tens un capital de ")+`capital`+_("e, quan vols apostar?"))
 				aposta = int(raw_input())
 		else:
 			#Si la cantitat apostada era negativa o superior al capital ens dira que ho tornem a provar.
@@ -55,8 +55,8 @@ def main ():
 		print _("Mala sort! Ho has perdut tot!")
 	else:
 	#Si ens queda ens en mostrara la quantitat
-		print _("El teu capital final es: "+`capital`+".")
+		print (_("El teu capital final es: ")+`capital`+_("."))
 	#Finalment ens mostra les partides guanyades i perdudes.
-	print _("Has guanyat "+ `nguanyades` + " partides i n'has perdut "+`nperdudes`+".")
+	print (_("Has guanyat ")+ `nguanyades` + _(" partides i n'has perdut ")+`nperdudes`+_("."))
 
 main()
