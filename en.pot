@@ -25,7 +25,7 @@ msgstr "Welcome to the lucky roulette"
 msgid "e, quan vols apostar?"
 msgstr "how much you want to bet ?"
 
-#: ruleta.py:19 ruleta.py:30
+#: ruleta.py:19 ruleta.py:46
 msgid "Tens un capital de "
 msgstr "You have a capital of "
 

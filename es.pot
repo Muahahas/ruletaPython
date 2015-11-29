@@ -25,7 +25,7 @@ msgstr "Benvingut a la ruleta de la sort"
 msgid "e, quan vols apostar?"
 msgstr "e, quan vols apostar?"
 
-#: ruleta.py:19 ruleta.py:30
+#: ruleta.py:19 ruleta.py:46
 msgid "Tens un capital de "
 msgstr "Tens un capital de "
 

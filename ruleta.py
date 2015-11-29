@@ -17,7 +17,7 @@ def main ():
 	nperdudes=0
 	print _("Benvingut a la ruleta de la sort.")
 	print (_("Tens un capital de " + `capital` +_("e, quan vols apostar?"))
-	aposta =int(raw_input())
+	aposta = int(raw_input())
 	while (aposta!=0 and capital!=0):
 		#Entrara en aquest bucle mentres s'aposti mes de 0 i es tingui capital.	
 		if (aposta<=capital and aposta>0):
